@@ -13,6 +13,7 @@ import {
 const router = express.Router()
 
 router.route('/').post(protect, createNewWorkout).get(protect, getWorkouts)
+
 router
 	.route('/:id')
 	.get(protect, getWorkout)
